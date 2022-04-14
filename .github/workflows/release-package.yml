@@ -1,6 +1,7 @@
 on:
-  release:
-    types: [created]
+  push:
+    branches: 
+      - master
 jobs:
   npm:
     runs-on: ubuntu-latest
