@@ -47,4 +47,14 @@ describe('lsEnum', () => {
   //
   //   expect(lsEnum(TestEnum)).toEqual(['ValueA', 1]);
   // });
+
+  // NOTE: This is not needed, since it'd throw a 'An enum member cannot have a numeric name.'
+  // exception.
+  // it('works for enums with numeric keys', () => {
+  //   enum TestEnum {
+  //     '10' = 'ValueB',
+  //   }
+  //
+  //   expect(lsEnum(TestEnum)).toEqual([0, 1]);
+  // });
 });
