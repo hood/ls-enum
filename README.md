@@ -7,17 +7,17 @@ Tiny and fast utility to extract all possible values for a given enum.
 ## Installation
 #### Using yarn
 ```sh
-yarn add immutable
+yarn add ls-enum
 ```
 
 #### Using pnpm
 ```sh
-pnpm add immutable
+pnpm add ls-enum
 ```
 
 #### Using npm
 ```sh
-npm install immutable
+npm install ls-enum
 ```
 
 <hr />
