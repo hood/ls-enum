@@ -1,6 +1,7 @@
+name: release-package
 on:
   push:
-    branches: 
+    branches:
       - master
 jobs:
   npm:
@@ -19,18 +20,13 @@ jobs:
       - name: Test and build package
         run: |
           yarn test
-          yarn run build:lib
-      - name: Publish tag to npm
-        if: contains(github.ref, 'tags')
-        run: yarn publish --access=public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+          yarn prepare
 
       - uses: actions/setup-node@v1
         with:
           registry-url: 'https://npm.pkg.github.com'
 
       - name: Publish tag to GPR
-        run: yarn publish
+        run: yarn publish --non-interactive
         env:
-          NODE_AUTH_TOKEN: ${{ github.token }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
