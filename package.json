@@ -33,6 +33,10 @@
   },
   "name": "ls-enum",
   "author": "Andrea Cappuccio",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hood/ls-enum.git"
+  },
   "module": "dist/ls-enum.esm.js",
   "size-limit": [
     {
