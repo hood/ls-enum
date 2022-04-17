@@ -1,6 +1,6 @@
 # ls-enum
 
-Tiny and fast utility to extract all possible values for a given enum.
+Tiny (208B) and fast utility to extract all possible values for a given enum.
 
 <hr />
 
